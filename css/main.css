@@ -243,7 +243,7 @@ body{
 
 
 
-
+/* bars-btn */
 
 
 .right-nav{
@@ -289,9 +289,85 @@ body{
     top: 30px;
     right: 30px;
 }
+/* bars-btn end */
+
+/* hover */
+.sitenav__link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transition: width 0.3s linear;
+}
+.sitenav__link:hover::after {
+    width: 50%;
+    color: var(--primary-color);
+}
+.sitenav__link::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -6px;
+    right: 50%;
+    transition: width 0.3s linear;
+}
+.sitenav__link:hover::before {
+    width: 50%;
+    color: var(--primary-color);
+}
+
+/* hover */
 
 
 
+/* DESIGN */
+.design__container {
+    padding-top: 7.5rem;
+    padding-bottom: 7rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.design__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.design__item:not(:last-child) {
+    margin-right: 10rem;
+}
+.design__title {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    line-height: 1.56;
+    letter-spacing: 0.0088em;
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+.design__text {
+    width: 100%;
+    max-width: 317px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    margin-bottom: 4rem;
+}
+.design__link {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+/* DESIGN END */
 
 
 
@@ -300,7 +376,28 @@ body{
 
 /* RESPONSIVE */
 @media only screen and (max-width:1200px){
-    
+    .design__list {
+        flex-direction: column;
+        color:rgb(0, 0, 0);
+        
+    }
+    .design__item:not(:last-child) {
+        margin-right: 0px;
+        
+    }
+    .design__container{
+        background-color: rgb(165, 133, 133);
+    }
+    .design__text{
+        font-size: 2.7rem;
+    }
+    .design__link {
+        font-size: 2.4rem;
+    }
+    .design__title{
+        font-size: 3rem;
+    }
+
 }
 
 
@@ -369,6 +466,11 @@ body{
         text-align: center;
     }
 }
+@media only screen and (max-width:370px){
+    html{
+        font-size: 50%;
+    }
+}
 /* loader */
 .next{
     position: fixed;
@@ -381,14 +483,13 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 100;
- }
- 
- .next{
+} 
+.next{
     animation:vanish 4s 0s forwards;
- }
- @keyframes vanish {
+}
+@keyframes vanish {
     100%{
         opacity: 0;
         visibility: hidden;
     }
- }
+} 
