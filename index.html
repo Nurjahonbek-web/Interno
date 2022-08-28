@@ -12,9 +12,9 @@
 </head>
 <body>
     <!-- LOADER -->
-    <div class="next">
+    <!-- <div class="next">
         <img src="https://cormullion.github.io/assets/images/slackmojif/slackanimation.gif" alt="">
-    </div> 
+    </div>  -->
     <!-- LOADER END -->
     <!-- HEADER -->
     <header class="header">
@@ -51,7 +51,7 @@
             <img class="bars-btn__img" src="./images/png/close-img.png" alt="" width="50" height="50">
         </button>
         <nav class="sitenav">
-            <ul class="sitenav__list">
+            <ul class="sitenav__list remove-list">
                 <li class="sitenav__item">
                     <a class="sitenav__link" href="#">Home</a>
                 </li>
@@ -90,29 +90,69 @@
             </div>
         </section>
         <!-- HERO END -->
-        <!-- DESIGN -->
-        <design class="design">
-            <div class="conteiner design__container">
-                <ul class="design__list">
-                    <li class="design__item">
-                        <h3 class="design__title">Interior Design</h3>
-                        <p class="design__text">Enhancing the interior to achieve a healthier environment for the people using right space.</p>
-                        <a class="design__link" href="#">View More</a>
+        <!-- INFORMATION -->
+        <div class="information">
+            <div class="container information__containner">
+                <ul class="information__list">
+                    <!-- INFORMATION ITEM 1 -->
+                    <li class="information__item">
+                        <h3 class="information__title section-title">Interior Design</h3>
+                        <p class="information__text">Enhancing the interior to achieve a healthier environment for the people using right space.</p>
+                        <a class="information__link" href="#">
+                            <span>View More</span>
+                            <img src="./images/svg/arrow-right.svg" alt="arrow-right " width="24" height="17">
+                        </a>
                     </li>
-                    <li class="design__item">
-                        <h3 class="design__title">Furniture</h3>
-                        <p class="design__text">Movable articles that are used to make a room or building suitable for living or working.</p>
-                        <a class="design__link" href="#">View More</a>
+                    <!-- INFORMATION ITEM 2 -->
+                    <li class="information__item">
+                        <h3 class="information__title section-title">Furniture</h3>
+                        <p class="information__text">Movable articles that are used to make a room or building suitable for living or working.</p>
+                        <a class="information__link" href="#">
+                            <span>View More</span>
+                            <img src="./images/svg/arrow-right.svg" alt="arrow-right " width="24" height="17">
+                        </a>
                     </li>
-                    <li class="design__item">
-                        <h3 class="design__title">Flooring</h3>
-                        <p class="design__text">Thin object any finished material applied over a floor structure to provide a walking surface.</p>
-                        <a class="design__link" href="#">View More</a>
+                    <!-- INFORMATION ITEM 3 -->
+                    <li class="information__item">
+                        <h3 class="information__title section-title">Flooring</h3>
+                        <p class="information__text">Thin object any finished material applied over a floor structure to provide a walking surface.</p>
+                        <a class="information__link" href="#">
+                            <span>View More</span>
+                            <img src="./images/svg/arrow-right.svg" alt="arrow-right " width="24" height="17">
+                        </a>
                     </li>
                 </ul>
             </div>
-        </design>
-        <!-- DESIGN END -->
+        </div>
+        <!-- INFORMATION END  -->
+        <!-- CALL -->
+        <div class="call">
+        <div class="container call__container">
+            <div class="call__text-wrapper">
+                <h2 class="call__title">We Tackle The Most Challenging Designs</h2>
+                <p class="call__text">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have</p>
+                <p class="call__text">an insatiable curiosity about transformative trends challenging the status.</p>
+                <div class="call__phone">
+                    <a class="call__phone-link" href="tel:+998950936793">
+                        <img src="./images/png/phone-icon.png" alt="phone-icon" srcset="./images/png/phone-icon.png 1x, ./images/png/phone-icon@2x.png 2x" width="34" height="34">
+                    </a>
+                    <div class="call__phone-number">
+                        <span>012345678</span>
+                        <span>Call Us Anytime</span>      
+                    </div>
+                </div>
+                <a class="call__btn site-btn" href="#">
+                    <span>Get Free Estimate</span>
+                    <span class="site-btn__icon">
+                        <svg width="28" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m2 3 24-1" stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/></svg>
+                        <svg width="14" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.217 2 13 19.82 2 38" stroke="#CDA274" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+            </div>
+            <img class="call__img" src="./images/png/call-img.png" alt="" srcset="./images/png/call-img.png 1x, ./images/png/call-img@2x.png 2x" width="592" height="635">
+        </div>
+    </div>
+        <!-- CALL END -->
     </main>
     <!-- MAIN END -->
     <script src="./app.js"></script>
