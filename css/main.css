@@ -394,12 +394,11 @@ body{
 
 /* bars-btn */
 
-
 .right-nav{
     width: 60vw;
     height: 100vh;
     position: fixed;
-    background-color: rgb(139, 115, 115);
+    background-color: rgb(168, 149, 149);
     top: 0;
     left: 0;
     padding: 2rem;
@@ -423,15 +422,10 @@ body{
 .remove{
     transform: translate(-100%);
     transition: all 0.6s ease;
-    
-}
-.remove-list{
-    display: flex;
-
 }
 .right-nav a{
     font-size: 2rem;
-    color:#cda274;
+    
 }
 .right-nav-btn{
     border: none;
@@ -443,6 +437,13 @@ body{
     top: 30px;
     right: 30px;
 }
+
+
+
+
+
+
+
 /* bars-btn end */
 
 /* hover */
@@ -583,6 +584,26 @@ body{
         width: 100%;
         height: auto;
     }
+
+    /* NAVBAR STYLES */
+
+    .sitenav__item:not(:last-child){
+        margin-right: 0;
+    }
+    .sitenav__link{
+        text-transform: uppercase;
+    }
+    .sitenav__item:not(:last-child){
+        margin-bottom: 1.2rem;
+    }
+    .sitenav__item{
+        transition: transform ease 1.3s;
+    }
+    .sitenav__item:hover{
+        transform: scale(1.2);
+        color: red;
+    }
+
 }
 
 
@@ -655,7 +676,7 @@ body{
 
 }
 /* loader */
-/* .next{
+.next{
     position: fixed;
     top: 0;
     left: 0;
@@ -675,4 +696,4 @@ body{
         opacity: 0;
         visibility: hidden;
     }
-}  */
+}  

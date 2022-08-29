@@ -18,10 +18,10 @@ closeBtn.addEventListener("click", function(){
 
 
 
-// var loader = document.querySelector(".gif")
+var loader = document.querySelector(".gif")
 
-// window.addEventListener("load", vanish);
+window.addEventListener("load", vanish);
 
-// function vanish(){
-//     loader.classList.add("disppear");
-// }
+function vanish(){
+loader.classList.add("disppear");
+}
