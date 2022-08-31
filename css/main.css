@@ -459,6 +459,39 @@ body{
 /* ABOUT-US STYLES END */
 
 
+/* BRAND STYLES */
+.brand {
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-bottom: 11.3rem;
+}
+
+.brand__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand__wrapper a{
+    outline: none;
+}
+.brand__wrapper img{
+    transition: transform ease 1.1s;
+    cursor: pointer;
+}
+.brand__wrapper img:hover{
+    transform: scale(1.2);
+}
+.brand__wrapper img:active{
+    opacity: 0.8;
+}
+/* BRAND END */
+
+
+
+
+
+
+
 
 
 /* bars-btn */
@@ -510,7 +543,6 @@ body{
     color: var(--color-secondary);
     color: #f4f0ec;
 }
-
 
 
 
@@ -604,7 +636,22 @@ body{
     }
 
 }
-
+@media only screen and (max-width:1000px){
+    .brand__wrapper {
+        flex-direction: column;
+        text-align: center;
+        display: grid;
+        gap: 3rem;
+        align-items: center ;
+        justify-content: center;
+        
+    }
+    .brand__wrapper img{
+        width: 100%;
+        max-width: 200px;
+        min-height: 150px;
+    }
+}
 
 @media only screen and (max-width:992px){
     .hero__text{
@@ -760,8 +807,23 @@ body{
     .about-us{
         margin-bottom: 5rem;
     }
+
+
+
+
+
+
+    .brand__wrapper img{
+        width: 100%;
+        max-width: 150px;
+        min-height: 150px;
+    }
     
 }
+
+
+
+
 @media only screen and (max-width:370px){
     .call__title{
         font-size: 3rem;
@@ -774,6 +836,17 @@ body{
     }
     .call__btn{
         padding: 1.2rem 2rem;
+    }
+
+
+
+
+
+    .brand__wrapper img{
+        height: 0;
+        width: 100%;
+        max-width: 100px;
+        gap: 0;
     }
 
 }
