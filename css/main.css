@@ -387,7 +387,76 @@ body{
     object-position: center;
 }
 
+/* ABOUT-US STYLES */
+.about-us {
+    margin-bottom: 14rem;
+}
+.about-us__inner {
+    background-color:var(--gray-bg-color);
+    border-radius: 7rem;
+    padding: 13rem 5rem 12rem;
+}
+.about-us__title {
+    font-family: var(--serif);
+    font-size: 4.5rem;
+    line-height: 1.28;
+    color: var(--color-secondary);
+    font-weight: 400;
+    width: 100%;
+    max-width: 497px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4.7rem;
+}
+.about-us__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.8rem;
 
+}
+
+.about-us__item {
+    background-color: var(--white-bg-color);
+    border-radius: 3rem;
+    padding: 5rem 3rem 4.5rem 3.5rem;
+}
+.about-us__item-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+
+}
+.about-us__item-img {
+    width: 77px;
+    height: 77px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 2rem;
+}
+.about-us__item-name{
+    display: flex;
+    flex-direction: column;
+}
+.about-us__item-name span:first-child {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.48;
+    color: var(--color-secondary);
+    
+}
+.about-us__item-name span:last-child {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+}
+.about-us__text {
+    font-size: 2rem;
+    
+}
+/* ABOUT-US STYLES END */
 
 
 
@@ -398,7 +467,7 @@ body{
     width: 60vw;
     height: 100vh;
     position: fixed;
-    background-color: rgb(168, 149, 149);
+    background-color: burlywood;
     top: 0;
     left: 0;
     padding: 2rem;
@@ -436,6 +505,10 @@ body{
     position: absolute;
     top: 30px;
     right: 30px;
+}
+.remove__link:hover{
+    color: var(--color-secondary);
+    color: #f4f0ec;
 }
 
 
@@ -537,7 +610,14 @@ body{
     .hero__text{
         text-shadow: 0px 0px 3px #fff;
     }
+    .about-us__item:last-child{
+        grid-area: 2/1/3/3;
+    }
 }
+
+
+
+
 @media only screen and (max-width:776px){
     .information__list{
         flex-direction: column;
@@ -563,6 +643,9 @@ body{
     }
     .information__item:first-child .information__text{
         margin-bottom: 2rem;
+    }
+    .about-us__item:last-child{
+        grid-area:auto;
     }
 }
 
@@ -634,6 +717,10 @@ body{
     .call{
         margin-bottom: 8rem;
     }
+    .about-us__title{
+        font-size: 3.5rem;
+
+    }
 }
 
 
@@ -659,6 +746,21 @@ body{
     .hero{
         text-align: center;
     }
+    .about-us__list {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 1rem;
+    
+    }
+    .about-us__inner{
+        padding: 5rem 2rem;
+    }
+    .about-us .container{
+        padding: 0;
+    }
+    .about-us{
+        margin-bottom: 5rem;
+    }
+    
 }
 @media only screen and (max-width:370px){
     .call__title{
